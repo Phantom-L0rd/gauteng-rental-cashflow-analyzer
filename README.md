@@ -55,25 +55,25 @@ Includes calculations used by real estate investors:
 
 ### **✔ ROI (Return on Investment)**
 
-[
+$$
 ROI = \frac{\text{Annual Net Profit}}{\text{Total Investment}} \times 100
-]
+$$
 
 
 ### **✔ Cap Rate**
 
-[
+$$
 \text{Cap Rate} = \frac{\text{Net Operating Income}}{\text{Property Value}} \times 100
-]
+$$
 
 Industry standard for measuring investment strength.
 
 
 ### **✔ Net Rental Return**
 
-[
+$$
 \text{Net Rental Return} = \frac{\text{Annual Rent} - \text{Expenses}}{\text{Purchase Price}} \times 100
-]
+$$
 
 Includes:
 
@@ -86,18 +86,18 @@ Includes:
 
 ### **✔ Expected Vacancy Adjustments**
 
-[
+$$
 \text{Vacancy Loss} = \text{Annual Rent} \times \text{Vacancy Rate}
-]
+$$
 
 User can adjust vacancy assumptions per suburb.
 
 
 ### **✔ Cashflow Calculation**
 
-[
+$$
 \text{Cashflow} = \text{Annual Rent} - (\text{Expenses} + \text{Bond Payments})
-]
+$$
 
 Bond payment formula:
 
@@ -109,9 +109,9 @@ np.pmt(rate/12, years*12, -loan_amount)
 
 ### **✔ Inflation-Adjusted Rent Projection**
 
-[
+$$
 \text{Future Rent} = \text{Rent} \times (1 + \text{inflation})^n
-]
+$$
 
 Shows rent growth over 5–10 years.
 
