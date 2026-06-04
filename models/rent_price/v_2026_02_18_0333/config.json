@@ -1,0 +1,25 @@
+{
+    "model": {
+        "type": "random_forest",
+        "n_estimators": 300,
+        "max_depth": 12,
+        "random_state": 42,
+        "test_size": 0.2
+    },
+    "features": {
+        "numerical": [
+            "bedrooms",
+            "bathrooms",
+            "parking",
+            "floor_size",
+            "suburb_avg_rent",
+            "is_estate",
+            "has_security",
+            "is_modern"
+        ],
+        "categorical": [
+            "type"
+        ]
+    },
+    "target": "price"
+}

@@ -1,0 +1,62 @@
+param_dist:
+  n_estimators:
+  - 200
+  - 230
+  - 250
+  - 270
+  - 300
+  - 350
+  - 400
+  max_depth:
+  - 30
+  - 35
+  - 40
+  - 45
+  - null
+  max_features:
+  - sqrt
+  - 0.4
+  - 0.5
+  min_samples_leaf:
+  - 1
+  - 2
+  min_samples_split:
+  - 5
+  - 8
+  - 10
+  - 12
+  criterion:
+  - poisson
+  - friedman_mse
+model:
+  type: random_forest
+  version: 0
+  random_state: 42
+  test_size: 0.2
+  prod_params:
+    n_estimators: 230
+    max_depth: 35
+    max_features: sqrt
+    min_samples_leaf: 1
+    min_samples_split: 10
+    criterion: poisson
+  production_metrics:
+    rmse: 5348.19
+    r2: 0.8617
+    mae: 3019.33
+features:
+  numerical:
+  - bedrooms
+  - bathrooms
+  - parking
+  - floor_size
+  - suburb_avg_rent
+  - city_avg_rent
+  - muni_avg_rent
+  - is_estate
+  - has_security
+  - is_modern
+  - is_luxury
+  categorical:
+  - type
+target: price
